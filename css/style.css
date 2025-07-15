@@ -193,3 +193,29 @@ footer {
 .project-card a:hover {
   text-decoration: underline;
 }
+
+
+.joining-lab {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-left: 6px solid #3d9140;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.joining-lab h2,
+.joining-lab h3 {
+  color: #3d9140;
+}
+
+.joining-lab ul {
+  padding-left: 2rem; /* Increase this number if you want more indent */
+  margin-bottom: 1rem;
+  list-style-position: outside;
+}
+
+.joining-lab li {
+  margin-bottom: 0.5rem;
+}
