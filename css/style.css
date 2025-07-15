@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1e1e1e; /* dark gray background */
-  color: #ddd; /* light gray text */
+  background-color: #f7f7f7; /* light background */
+  color: #222; /* dark text */
   line-height: 1.6;
   min-height: 100vh;
   display: flex;
@@ -16,19 +16,19 @@ body {
 }
 
 header {
-  background-color: #2a2a2a; /* slightly lighter dark gray */
+  background-color: #e4e4e4; /* light gray header */
   padding: 1rem 2rem;
   text-align: center;
 }
 
 h1 {
-  color: #9acd32; /* frog green */
+  color: #3d9140; /* frog green */
   font-size: 2.5rem;
   margin-bottom: 0.25rem;
 }
 
 em {
-  color: #a0a0a0;
+  color: #555;
 }
 
 nav {
@@ -41,22 +41,22 @@ nav {
   justify-content: center;
   gap: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid #444;
+  border-bottom: 1px solid #ccc;
 }
 
 .nav-list li a {
-  color: #ccc;
+  color: #333;
   text-decoration: none;
   font-weight: 600;
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-list li a:hover,
 .nav-list li a.active {
-  background-color: #9acd32;
-  color: #1e1e1e;
+  background-color: #3d9140;
+  color: #fff;
 }
 
 main {
@@ -64,29 +64,37 @@ main {
   padding: 2rem;
   max-width: 900px;
   margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
 }
 
-.intro {
-  text-align: center;
+.intro,
+.joining-info {
+  text-align: left;
   margin-bottom: 3rem;
 }
 
 .hero-image {
   max-width: 200px;
   margin-top: 1rem;
-  filter: drop-shadow(0 0 5px #9acd32);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.news ul {
+.news ul,
+.joining-info ul {
   list-style-type: disc;
   padding-left: 1.5rem;
+  margin-top: 0.5rem;
 }
 
 footer {
-  background-color: #2a2a2a;
-  color: #888;
+  background-color: #e4e4e4;
+  color: #555;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-  border-top: 1px solid #444;
+  border-top: 1px solid #ccc;
 }
