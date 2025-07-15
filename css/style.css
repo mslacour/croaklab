@@ -98,3 +98,63 @@ footer {
   font-size: 0.9rem;
   border-top: 1px solid #ccc;
 }
+
+.lab-leads,
+.lab-members {
+  margin-bottom: 3rem;
+}
+
+.lead-container,
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.member-card {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  object-fit: cover;
+}
+
+.bio {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.bio p {
+  margin-bottom: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggle-bio {
+  margin-top: 0.5rem;
+  background-color: #3d9140;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-bio:hover {
+  background-color: #2f7131;
+}

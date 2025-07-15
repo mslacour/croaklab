@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>C.R.O.A.K. Lab — Lab Members</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="joining.html">Joining the Lab</a></li>
+        <li><a href="members.html" class="active">Lab Members</a></li>
+        <li><a href="projects.html">Ongoing Projects</a></li>
+        <li><a href="learnstats.html">Learn Stats!</a></li>
+      </ul>
+    </nav>
+    <h1>C.R.O.A.K. Lab</h1>
+    <p><em>Communication, Rationality, Opinions, Attitudes, and Knowledge Lab</em></p>
+  </header>
+
+  <main>
+    <section class="lab-members">
+      <h2>Meet the Lab</h2>
+      <div class="member-list">
+
+        <!-- You (Director) -->
+        <div class="member-card">
+          <img src="images/Croak Logo.png" alt="Lab member photo" />
+          <h3>Dr. Mark LaCour</h3>
+          <p>Lab Director</p>
+          <button class="toggle-bio">More about me</button>
+          <div class="bio hidden">
+            <p>I am Assistant Professor of Psychology at the University of Louisiana at Lafayette. I earned a Ph.D. in experimental psychology from Texas Tech University with a concentration in cognition and cognitive neuroscience. Before that, I earned an M.S. in psychology and an honors B.A. in philosophy (minor in cognitive science) from the University of Louisiana at Lafayette. I am primarily a cognitive/quantitative psychologist, though I also dabble in social psychology. My research focuses on judgment, decision-making, and belief processes with a special focus on public health issues (e.g., vaccine hesitancy, risk communication). </p>
+            <p>
+              <a href="https://scholar.google.com/citations?user=VHQXHTsAAAAJ&hl=en">Google Scholar</a> |
+              <a href="https://www.researchgate.net/profile/Mark-Lacour">Research Gate</a> |
+              <a href="https://www.linkedin.com/in/mark-lacour-708736260/">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Co-Director -->
+        <div class="member-card">
+          <img src="images/Croak Logo.png" alt="Lab member photo" />
+          <h3>Dr. [Colleague Name]</h3>
+          <p>Co-Director</p>
+          <button class="toggle-bio">More about me</button>
+          <div class="bio hidden">
+            <p>[Colleague] is a collaborator from [University] who works on X, Y, and Z.</p>
+            <p>
+              <a href="#">Website</a> |
+              <a href="#">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Regular Member -->
+        <div class="member-card">
+          <img src="images/Croak Logo.png" alt="Lab member photo" />
+          <h3>Jane Doe</h3>
+          <p>Research Assistant</p>
+          <button class="toggle-bio">More about me</button>
+          <div class="bio hidden">
+            <p>Jane is a junior majoring in psychology. She studies attitudes about science and loves frogs.</p>
+            <p>
+              <a href="#">LinkedIn</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 C.R.O.A.K. Lab | Columbia University Psychology Department</p>
+  </footer>
+
+  <script>
+    // Simple toggle for bios
+    document.querySelectorAll('.toggle-bio').forEach(button => {
+      button.addEventListener('click', () => {
+        const bio = button.nextElementSibling;
+        bio.classList.toggle('hidden');
+        button.textContent = bio.classList.contains('hidden') ? 'More about me' : 'Hide bio';
+      });
+    });
+  </script>
+</body>
+</html>
